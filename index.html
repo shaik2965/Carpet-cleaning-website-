@@ -1,4 +1,54 @@
-<div class="section gallery">
+/* ---- Booking form ---- */
+.form-section { background:#fff; max-width:600px; margin:10px auto; padding:20px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,.05); }
+
+.booking-form { display:grid; gap:15px; }
+
+.booking-form label { display:flex; flex-direction:column; text-align:left; font-weight:600; font-size:0.95rem; }
+
+.booking-form input,
+.booking-form select { padding:10px; border:1px solid #ccc; border-radius:6px; font-size:1rem; }
+
+.booking-form button { background:#0d6efd; color:#fff; padding:12px 20px; border:none; border-radius:8px; font-size:1rem; cursor:pointer; transition:opacity .2s; }
+
+.booking-form button:hover { opacity:.9; }
+
+.form-note { font-size:.85rem; color:#555; margin-top:10px; }<!-- =========  Booking Form  ========= -->
+<div class="section form-section">
+  <h2>Book a Cleaning</h2>
+
+  <form action="https://formspree.io/f/yourIDhere" method="POST" class="booking-form">
+    <label>
+      Full Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Phone / WhatsApp
+      <input type="tel" name="phone" pattern="[0-9+ ]{7,15}" required>
+    </label>
+
+    <label>
+      Service Required
+      <select name="service" required>
+        <option value="">Select…</option>
+        <option>Carpet Cleaning</option>
+        <option>Sofa Cleaning</option>
+        <option>Rug Cleaning</option>
+        <option>Stain / Odor Removal</option>
+      </select>
+    </label>
+
+    <label>
+      Preferred Date &amp; Time
+      <input type="datetime-local" name="datetime">
+    </label>
+
+    <button type="submit">Send Booking</button>
+  </form>
+
+  <p class="form-note">🔒 We respect your privacy. We’ll confirm your appointment by call or WhatsApp.</p>
+</div>
+<!-- ================================== --><div class="section gallery">
   <h2>Photo Gallery</h2>
   <div class="slideshow-container">
     <div class="slides"><img src="before1.jpg" alt="Before Cleaning"></div>
