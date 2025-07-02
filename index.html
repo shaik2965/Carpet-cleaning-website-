@@ -1,133 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Superior Carpet Care | Bengaluru</title>
-  <style>
-    body { font-family: Arial; margin: 0; background: #f4f4f4; }
-    header { background: #0d6efd; color: white; padding: 20px; text-align: center; }
-    .section { padding: 20px; text-align: center; }
-    .services, .gallery, .form-section { background: white; margin: 10px auto; padding: 20px; border-radius: 12px; max-width: 800px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .contact { background: #e7f1ff; padding: 20px; border-radius: 10px; }
-    footer { background: #0d6efd; color: white; text-align: center; padding: 10px; }
-
-    /* WhatsApp Button */
-    a.whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    /* Booking Form */
-    .booking-form { display: grid; gap: 15px; text-align: left; }
-    .booking-form label { font-weight: bold; }
-    .booking-form input, .booking-form select {
-      padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;
-    }
-    .booking-form button {
-      background: #0d6efd; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer;
-    }
-
-    /* Slideshow */
-    .slideshow-container { max-width: 600px; margin: auto; position: relative; }
-    .mySlides { display: none; }
-    .mySlides img { width: 100%; border-radius: 10px; }
-    .dot { height: 12px; width: 12px; margin: 5px; background: #bbb; border-radius: 50%; display: inline-block; }
-    .active { background-color: #0d6efd; }
-    .fade { animation: fade 1s; }
-    @keyframes fade { from {opacity: .4} to {opacity: 1} }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
-
-  <header>
-    <h1>Superior Carpet Care</h1>
-    <p>Professional Cleaning Services in Bengaluru</p>
-  </header>
-
-  <div class="section services">
-    <h2>Our Services</h2>
-    <p>✅ Deep Carpet Cleaning</p>
-    <p>✅ Stain & Odor Removal</p>
-    <p>✅ Rug & Sofa Cleaning</p>
-    <p>✅ Eco-Friendly & Fast Drying</p>
-  </div>
-
-  <div class="section form-section">
-    <h2>Book a Cleaning</h2>
-    <form action="https://formspree.io/f/xyzjorpw" method="POST" class="booking-form">
-      <label>Full Name <input type="text" name="name" required></label>
-      <label>Phone / WhatsApp <input type="tel" name="phone" pattern="[0-9+ ]{7,15}" required></label>
-      <label>Service Required
-        <select name="service" required>
-          <option value="">Select…</option>
-          <option>Carpet Cleaning</option>
-          <option>Sofa Cleaning</option>
-          <option>Rug Cleaning</option>
-          <option>Stain / Odor Removal</option>
-        </select>
-      </label>
-      <label>Preferred Date & Time <input type="datetime-local" name="datetime"></label>
-      <button type="submit">Send Booking</button>
-    </form>
-  </div>
-
-  <div class="section gallery">
-    <h2>Photo Gallery</h2>
-    <div class="slideshow-container">
-      <div class="mySlides fade"><img src="keicuf23xie71.jpg" alt="Before Cleaning"></div>
-      <div class="mySlides fade"><img src="sofa-cleaning-before-after.webp" alt="After Cleaning"></div>
-    </div>
-    <div style="text-align:center;">
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
-
-  <div class="section contact">
-    <h2>Contact Us</h2>
-    <p>📞 <a href="tel:9972345808">99723 45808</a></p>
-    <p>💬 <a href="https://wa.me/919972345808" target="_blank">Message Us on WhatsApp</a></p>
-    <p>📍 Bengaluru, India</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.243082219448!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c8b8a111%3A0x48829c8c7e1899e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719900000000"></iframe>
-  </div>
-
-  <!-- WhatsApp Floating Icon -->
-  <a href="https://wa.me/919972345808" class="whatsapp" target="_blank">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="width:50px; height:50px;">
-  </a>
-
-  <footer>
-    <p>&copy; 2025 Superior Carpet Care</p>
-  </footer>
-
-  <script>
-    let slideIndex = 0;
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1; }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000);
-    }
-    showSlides();
-  </script>
+  <h1>Superior Carpet Care</h1>
+  <p>Website with Google Verification</p>
 </body>
 </html>
