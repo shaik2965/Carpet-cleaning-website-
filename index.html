@@ -20,7 +20,7 @@
       padding: 20px;
       text-align: center;
     }
-    .services, .gallery {
+    .services, .gallery, .form-section {
       background: white;
       margin: 10px auto;
       padding: 20px;
@@ -33,25 +33,6 @@
       padding: 20px;
       border-radius: 10px;
     }
-    a.whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
-    footer {
-      background: #0d6efd;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
     .gallery-images {
       display: flex;
       flex-wrap: wrap;
@@ -63,6 +44,69 @@
       max-width: 200px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-section {
+      background: #fff;
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    }
+    .booking-form {
+      display: grid;
+      gap: 15px;
+    }
+    .booking-form label {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .booking-form input,
+    .booking-form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .booking-form button {
+      background: #0d6efd;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity .2s;
+    }
+    .booking-form button:hover {
+      opacity: .9;
+    }
+    .form-note {
+      font-size: .85rem;
+      color: #555;
+      margin-top: 10px;
+    }
+    a.whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 15px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -78,6 +122,36 @@
     <p>✅ Stain & Odor Removal</p>
     <p>✅ Rug & Sofa Cleaning</p>
     <p>✅ Eco-Friendly & Fast Drying</p>
+  </div>
+
+  <div class="section form-section">
+    <h2>Book a Cleaning</h2>
+    <form action="https://formspree.io/f/xyzjorpw" method="POST" class="booking-form">
+      <label>
+        Full Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Phone / WhatsApp
+        <input type="tel" name="phone" pattern="[0-9+ ]{7,15}" required>
+      </label>
+      <label>
+        Service Required
+        <select name="service" required>
+          <option value="">Select…</option>
+          <option>Carpet Cleaning</option>
+          <option>Sofa Cleaning</option>
+          <option>Rug Cleaning</option>
+          <option>Stain / Odor Removal</option>
+        </select>
+      </label>
+      <label>
+        Preferred Date & Time
+        <input type="datetime-local" name="datetime">
+      </label>
+      <button type="submit">Send Booking</button>
+    </form>
+    <p class="form-note">🔒 We respect your privacy. We’ll confirm your appointment by call or WhatsApp.</p>
   </div>
 
   <div class="section gallery">
@@ -98,7 +172,6 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.243082219448!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c8b8a111%3A0x48829c8c7e1899e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719900000000"></iframe>
   </div>
 
-  <!-- Floating WhatsApp Icon -->
   <a href="https://wa.me/919972345808" class="whatsapp" target="_blank" title="Chat on WhatsApp">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="width:50px; height:50px;">
   </a>
