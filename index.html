@@ -77,6 +77,9 @@
       background: #003366;
       color: white;
     }
+    input, select, button {
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -86,20 +89,22 @@
     <p>Professional Carpet, Sofa & Rug Cleaning in Bengaluru</p>
     <p>Deep Cleaning • Fast Drying • Eco-Friendly Solutions</p>
     <p><strong>📞 Call Us: <a href="tel:9972345808" style="color:#fff;">99723 45808</a></strong></p>
+    <p>
+      <a href="#booking" style="background:#ffb703; padding:12px 20px; color:black; border-radius:8px; font-weight:bold; text-decoration:none; display:inline-block; margin-top:15px;">
+        🛋️ Click to Book Now
+      </a>
+    </p>
   </header>
 
   <div class="section services">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Trained professionals using industrial-grade equipment</li>
-      <li>Powerful stain and odor removal with child-safe products</li>
-      <li>Transparent pricing and flexible scheduling</li>
-      <li>Instant WhatsApp support and easy booking</li>
-      <li>Over 500+ satisfied clients in Bengaluru</li>
-    </ul>
+    <h2>Our Services</h2>
+    <p>🧼 Deep Carpet Cleaning</p>
+    <p>🚫 Stain & Odor Removal</p>
+    <p>🛋️ Rug & Sofa Cleaning</p>
+    <p>🌿 Eco-Friendly & Fast Drying</p>
   </div>
 
-  <div class="section" style="background:#fff; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,.05); max-width:700px; margin:30px auto;">
+  <div id="booking" class="section" style="background:#fff; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,.05); max-width:700px; margin:30px auto;">
     <h2>Book a Cleaning Appointment</h2>
     <form action="https://formspree.io/f/xyzjorpw" method="POST" style="display:grid; gap:15px; padding:20px;">
       <label>
@@ -114,10 +119,10 @@
         Service Required
         <select name="service" required style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%;">
           <option value="">Select…</option>
-          <option>Carpet Cleaning</option>
-          <option>Sofa Cleaning</option>
-          <option>Rug Cleaning</option>
-          <option>Stain / Odor Removal</option>
+          <option>🧼 Carpet Cleaning</option>
+          <option>🛋️ Sofa Cleaning</option>
+          <option>🧺 Rug Cleaning</option>
+          <option>🚫 Stain / Odor Removal</option>
         </select>
       </label>
       <label>
@@ -155,6 +160,5 @@
   <footer>
     <p>&copy; 2025 Superior Carpet Care. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
