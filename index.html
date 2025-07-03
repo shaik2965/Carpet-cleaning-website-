@@ -1,164 +1,55 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Superior Carpet Care - Expert Cleaning Services in Bengaluru</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: #003366;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin: 5px 0;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services ul {
-      text-align: left;
-      max-width: 700px;
-      margin: 20px auto;
-      list-style: none;
-      padding-left: 0;
-    }
-    .services ul li::before {
-      content: "✔️";
-      margin-right: 10px;
-    }
-    .gallery-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .gallery-images img {
-      max-width: 250px;
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .contact, footer {
-      background: #e9f3ff;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 30px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-    a.whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    footer {
-      background: #003366;
-      color: white;
-    }
-    input, select, button {
-      font-size: 1rem;
-    }
-  </style>
-</head>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Superior Carpet Care - Fast & Eco-Friendly Carpet and Sofa Cleaning in Bengaluru">
+<title>Superior Carpet Care | Fast Booking</title>
+<style>
+body{margin:0;font-family:sans-serif;background:#f4f4f4;color:#222}
+header,footer{background:#0d6efd;color:#fff;text-align:center;padding:20px}
+.section{max-width:960px;margin:20px auto;padding:20px;background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+h2{color:#0d6efd}
+img{width:100%;max-width:300px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+.gallery{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+form{display:grid;gap:10px}
+input,select,button{padding:10px;border-radius:6px;border:1px solid #ccc;font-size:1rem}
+button{background:#0d6efd;color:#fff;border:none;cursor:pointer}
+.whatsapp{position:fixed;bottom:20px;right:20px;z-index:999}
+.whatsapp img{width:60px;height:60px;filter:drop-shadow(0 0 10px rgba(37,211,102,.8));animation:glow 2s infinite}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 10px rgba(37,211,102,.6))}50%{filter:drop-shadow(0 0 25px rgba(37,211,102,1))}}
+</style></head>
 <body>
-
-  <header>
-    <h1>Superior Carpet Care</h1>
-    <p>Professional Carpet, Sofa & Rug Cleaning in Bengaluru</p>
-    <p>Deep Cleaning • Fast Drying • Eco-Friendly Solutions</p>
-    <p><strong>📞 Call Us: <a href="tel:9972345808" style="color:#fff;">99723 45808</a></strong></p>
-    <p>
-      <a href="#booking" style="background:#ffb703; padding:12px 20px; color:black; border-radius:8px; font-weight:bold; text-decoration:none; display:inline-block; margin-top:15px;">
-        🛋️ Click to Book Now
-      </a>
-    </p>
-  </header>
-
-  <div class="section services">
-    <h2>Our Services</h2>
-    <p>🧼 Deep Carpet Cleaning</p>
-    <p>🚫 Stain & Odor Removal</p>
-    <p>🛋️ Rug & Sofa Cleaning</p>
-    <p>🌿 Eco-Friendly & Fast Drying</p>
-  </div>
-
-  <div id="booking" class="section" style="background:#fff; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,.05); max-width:700px; margin:30px auto;">
-    <h2>Book a Cleaning Appointment</h2>
-    <form action="https://formspree.io/f/xyzjorpw" method="POST" style="display:grid; gap:15px; padding:20px;">
-      <label>
-        Full Name
-        <input type="text" name="name" required style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%;">
-      </label>
-      <label>
-        Phone / WhatsApp
-        <input type="tel" name="phone" pattern="[0-9+ ]{7,15}" required style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%;">
-      </label>
-      <label>
-        Service Required
-        <select name="service" required style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%;">
-          <option value="">Select…</option>
-          <option>🧼 Carpet Cleaning</option>
-          <option>🛋️ Sofa Cleaning</option>
-          <option>🧺 Rug Cleaning</option>
-          <option>🚫 Stain / Odor Removal</option>
-        </select>
-      </label>
-      <label>
-        Preferred Date & Time
-        <input type="datetime-local" name="datetime" style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%;">
-      </label>
-      <button type="submit" style="background:#0d6efd; color:#fff; padding:12px; border:none; border-radius:8px; font-size:1rem; cursor:pointer;">
-        Send Booking
-      </button>
-      <p style="font-size:.85rem; color:#555;">🔒 Your info is safe with us. We’ll confirm by phone or WhatsApp.</p>
-    </form>
-  </div>
-
-  <div class="section gallery">
-    <h2>Before & After Gallery</h2>
-    <div class="gallery-images">
-      <img src="sofa-cleaning-before-after.webp" alt="Before and After Sofa Cleaning in Bengaluru">
-      <img src="keicuf23xie71.jpg" alt="Carpet Stain Removal">
-      <img src="https://via.placeholder.com/250x150?text=Deep+Steam+Cleaning" alt="Deep Steam Cleaning">
-    </div>
-  </div>
-
-  <div class="section contact">
-    <h2>Contact & Location</h2>
-    <p>📍 Bengaluru, India</p>
-    <p>💬 <a href="https://wa.me/919972345808" target="_blank">Chat on WhatsApp</a></p>
-    <p>📧 Email: superiorcarpetcare@example.com</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.243082219448!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c8b8a111%3A0x48829c8c7e1899e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719900000000"></iframe>
-  </div>
-
-  <a href="https://wa.me/919972345808" class="whatsapp" target="_blank" title="Chat on WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="width:50px;height:50px;">
-  </a>
-
-  <footer>
-    <p>&copy; 2025 Superior Carpet Care. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<header>
+<h1>Superior Carpet Care</h1>
+<p>Fast, Eco-Friendly Cleaning in Bengaluru</p>
+</header>
+<div class="section">
+<h2>📸 Before & After</h2>
+<div class="gallery">
+<img src="keicuf23xie71.jpg" alt="Before Cleaning" loading="lazy">
+<img src="sofa-cleaning-before-after.webp" alt="After Cleaning" loading="lazy">
+</div>
+</div>
+<div class="section">
+<h2>📅 Book a Cleaning</h2>
+<form action="https://formspree.io/f/xyzjorpw" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="tel" name="phone" placeholder="Phone or WhatsApp" required>
+<select name="service" required>
+<option value="">Choose Service</option>
+<option>Carpet Cleaning</option>
+<option>Sofa Cleaning</option>
+<option>Stain Removal</option>
+</select>
+<input type="datetime-local" name="datetime">
+<button type="submit">Send Booking</button>
+</form>
+</div>
+<div class="section">
+<h2>📍 Location</h2>
+<p>Bengaluru, India</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.243082219448!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c8b8a111%3A0x48829c8c7e1899e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719900000000" width="100%" height="250" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<a href="https://wa.me/919972345808" class="whatsapp" title="Chat on WhatsApp">
+<img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp Chat" loading="lazy">
+</a>
+<footer><p>&copy; 2025 Superior Carpet Care</p></footer>
+</body></html>
