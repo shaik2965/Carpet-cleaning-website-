@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shaik2965.github.io/Carpet-cleaning-website-/sitemap.xml
