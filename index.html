@@ -26,6 +26,7 @@
       background: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
     h2 {
       color: #004aad;
@@ -68,12 +69,18 @@
       border-radius: 50%;
       box-shadow: 0 0 15px #25D366;
     }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
     footer {
       background: #004aad;
       color: white;
       text-align: center;
       padding: 10px;
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -104,8 +111,15 @@
         <option>Stain Removal</option>
       </select>
       <input type="datetime-local" name="datetime">
+      <input type="text" name="location" placeholder="Service Location / Address" required>
       <button type="submit">Send Booking</button>
     </form>
+  </div>
+
+  <div class="section">
+    <h2>Our Service Location</h2>
+    <p>We proudly serve Bengaluru and surrounding areas. Visit us or schedule a visit at your convenience.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.243082219448!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c8b8a111%3A0x48829c8c7e1899e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719900000000" allowfullscreen></iframe>
   </div>
 
   <a href="https://wa.me/919972345808" class="whatsapp" target="_blank">
