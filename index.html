@@ -1,60 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional carpet cleaning services. Book online now!">
-    <meta name="keywords" content="carpet cleaning, sofa cleaning, home cleaning services">
-    <meta name="author" content="Shaik Abdul Kareem">
-    <title>Carpet Cleaning Services</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Superior Carpet Care | Bengaluru</title>
+  <meta name="description" content="Professional carpet and sofa cleaning in Bengaluru. Fast, eco-friendly service with guaranteed results.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #004aad;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, select, button {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #004aad;
+      color: white;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp img {
+      width: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #25D366;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Carpet Cleaning Services</h1>
-        <p>Clean. Fresh. Professional.</p>
-    </header>
+  <header>
+    <h1>Superior Carpet Care</h1>
+    <p>Expert Carpet & Sofa Cleaning Services in Bengaluru</p>
+  </header>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Deep Carpet Cleaning</li>
-            <li>Sofa Cleaning</li>
-            <li>Rug & Mattress Cleaning</li>
-        </ul>
-    </section>
+  <div class="section">
+    <h2>Before & After Cleaning</h2>
+    <div class="gallery">
+      <img src="before.jpg" alt="Before Cleaning">
+      <img src="after.jpg" alt="After Cleaning">
+    </div>
+  </div>
 
-    <section class="before-after">
-        <h2>Before & After Cleaning</h2>
-        <div class="image-pair">
-            <div>
-                <h3>Before</h3>
-                <img src="images/before.jpg" alt="Before Cleaning" />
-            </div>
-            <div>
-                <h3>After</h3>
-                <img src="images/after.jpg" alt="After Cleaning" />
-            </div>
-        </div>
-    </section>
+  <div class="section">
+    <h2>Book a Cleaning</h2>
+    <form action="https://formspree.io/f/xyzjorpw" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Carpet Cleaning</option>
+        <option>Sofa Cleaning</option>
+        <option>Rug Cleaning</option>
+        <option>Stain Removal</option>
+      </select>
+      <input type="datetime-local" name="datetime">
+      <button type="submit">Send Booking</button>
+    </form>
+  </div>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/xyzjorpw" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <a href="https://wa.me/919972345808" class="whatsapp" target="_blank">
+    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="Chat on WhatsApp">
+  </a>
 
-    <a href="https://wa.me/919972345808" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-        <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" />
-    </a>
-
-    <footer>
-        <p>&copy; 2025 Carpet Cleaning Services. All rights reserved.</p>
-    </footer>
+  <footer>
+    &copy; 2025 Superior Carpet Care. All rights reserved.
+  </footer>
 </body>
 </html>
